@@ -6,8 +6,6 @@ class CreateVeiculos < ActiveRecord::Migration[5.2]
       t.integer :ano
       t.text :descricao
       t.boolean :vendido
-      t.datetime :created_at
-      t.datetime :updated_at
 
       t.timestamps
     end
