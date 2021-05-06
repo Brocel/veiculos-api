@@ -9,5 +9,5 @@ RSpec.describe Veiculo, type: :model do
   it { should validate_presence_of(:veiculo) }
   it { should validate_presence_of(:ano) }
   it { should validate_presence_of(:descricao) }
-  it { should validate_presence_of(:vendido) }
+#  it { should validate_presence_of(:vendido) }
 end
