@@ -4,13 +4,13 @@ class VeiculosController < ApplicationController
 
   # GET /veiculos
   def index
-    @veiculos = veiculo.all
+    @veiculos = Veiculo.all
     json_response(@veiculos)
   end
 
   # POST /veiculos
   def create
-    @veiculo = veiculo.create!(veiculo_params)
+    @veiculo = Veiculo.create!(veiculo_params)
     json_response(@veiculo, :created)
   end
 
@@ -39,7 +39,7 @@ class VeiculosController < ApplicationController
   end
 
   def set_veiculo
-    @veiculo = veiculo.find(params[:id])
+    @veiculo = Veiculo.find(params[:id])
   end
 
 end
