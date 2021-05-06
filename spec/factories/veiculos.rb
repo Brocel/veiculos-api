@@ -5,6 +5,6 @@ FactoryBot.define do
     ano { Faker::Number.number(4) }
     descricao { Faker::Lorem.text }
     vendido { Faker::Boolean.boolean }
-  
+
   end
 end
