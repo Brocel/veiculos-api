@@ -35,7 +35,7 @@ class VeiculosController < ApplicationController
 
   def veiculo_params
     # whitelist params
-    params.permit(:title, :created_by)
+    params.permit(:marca, :veiculo, :ano, :descricao, :vendido)
   end
 
   def set_veiculo
